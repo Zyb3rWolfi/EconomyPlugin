@@ -1,0 +1,36 @@
+name: Economy
+version: '${version}'
+main: io.github.zyb3rwolfi.Economy.Economy
+api-version: '1.21'
+
+commands:
+  balance:
+    description: Shows you your balance
+    usage: /balance
+    permission: economy.command.balance
+  set:
+    description: Sets money to player
+    usage: /set
+    permission: economy.command.set
+  give:
+    description: Gives money to player
+    usage: /give
+    permission: economy.command.give
+  baltop:
+    description: Shows Top Balances
+    usage: /baltop
+    permission: economy.command.baltop
+
+permissions:
+  economy.command.set:
+    description: "Set money for a player"
+    default: op
+  economy.command.balance:
+    description: "Shows your balance"
+    default: not op
+  economy.command.give:
+    description: "Give money to a player"
+    default: not op
+  economy.command.baltop:
+    description: "Shows the top balances"
+    default: not op
